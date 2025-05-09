@@ -1,0 +1,37 @@
+# Steps to create a virtual environment in vs code using its powershell:
++ mkdir folder-name
++ cd folder-name
++ python -m venv venv
++ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
++ .\venv\Scripts\Activate
+
+# steps to create empty files in the powershell
++ "app.py", "chatbot.py", "requirements.txt", "README.md" | ForEach-Object { New-Item $_ -ItemType File }  
+
+# Steps to connect the vs code to a GitHub repo 
++ git init
++ New-Item .gitignore -ItemType File
+ then add files you want o ignore and not be pushed on GitHub
+exp : 
+venv/
+__pycache__/
+*.pyc
+.env
+*.ipynb_checkpoints
+
++ create repo
++ do not include a readme or .gitignore files
++git remote add origin https://github.com/yourusername/repo.git
+git branch -M main
+git add .
+git commit -m "Initial commit: setup project structure"
+git push -u origin main
+
+
+# how to use git in vs code 
+Use the Source Control panel in VS Code (left sidebar)
+
+Stage, commit, and push changes visually
+
+Or continue using Git commands in the terminal
+ 

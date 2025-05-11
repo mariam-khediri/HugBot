@@ -1,8 +1,4 @@
-Thanks! Here's your updated `README.md` with **only the necessary additions and modifications**, reflecting the changes you've made (switch to `google/flan-t5-base`, Gradio UI, and enhanced memory support), while preserving your original structure and tone:
 
----
-
-```md
 # 🤖 Chatbot with Memory – Python & Hugging Face Transformers
 
 A beginner-friendly chatbot built with Python using the Hugging Face `transformers` library. This chatbot can hold simple memory of past conversation turns and responds using a pre-trained model. Perfect as a hands-on intro project into LLMs and conversational AI.
@@ -14,7 +10,7 @@ A beginner-friendly chatbot built with Python using the Hugging Face `transforme
 ```
 
 chatbot/
-├── chatbot\_with\_memory.py       # Main chatbot logic with contextual memory
+├── chatbot\_with\_memory.py     # Main chatbot logic with contextual memory
 ├── app.py                       # Gradio-based web interface
 ├── requirements.txt             # Python dependencies
 ├── README.md                    # Project documentation
